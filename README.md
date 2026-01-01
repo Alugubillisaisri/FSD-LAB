@@ -1,6 +1,7 @@
 # FSD-LAB
 HTML Programs – Lists, Links, Images as Hyperlink & Image Maps
 Project Description
+
 This repository contains basic HTML programs created to understand and demonstrate the working of lists, hyperlinks, images, image maps, and profiles.
 
 Files Included
@@ -21,6 +22,7 @@ Ordered List
 Unordered List
 Nested Lists
 Definition List
+
 👤 Profile Pages
 myprofile.html Contains personal profile details using HTML elements.
 
