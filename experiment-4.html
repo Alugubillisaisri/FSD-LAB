@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Example</title>
+
+    <style>
+        /* ========================= */
+        /* SIMPLE SELECTORS */
+        /* ========================= */
+
+        /* Universal Selector */
+        * {
+            font-family: Arial;
+        }
+
+        /* Element Selector */
+        p {
+            color: blue;
+        }
+
+        /* ID Selector */
+        #main {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* Class Selector */
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Group Selector */
+        h2, h3 {
+            color: green;
+        }
+
+        /* ========================= */
+        /* COMBINATORY SELECTORS */
+        /* ========================= */
+
+        /* Descendant Selector */
+        div p {
+            font-size: 18px;
+        }
+
+        /* Child Selector */
+        ul > li {
+            color: brown;
+        }
+
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            color: purple;
+        }
+
+        /* General Sibling Selector */
+        h3 ~ p {
+            background-color: lightyellow;
+        }
+
+        /* ========================= */
+        /* PSEUDO-CLASS SELECTOR */
+        /* ========================= */
+
+        a:hover {
+            color: orange;
+        }
+
+        /* ========================= */
+        /* PSEUDO-ELEMENT SELECTOR */
+        /* ========================= */
+
+        p::first-letter {
+            font-size: 25px;
+            color: darkred;
+        }
+
+        /* ========================= */
+        /* ATTRIBUTE SELECTOR */
+        /* ========================= */
+
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body id="main">
+
+<h1>CSS Selector Demonstration</h1>
+
+<h2>Simple Selectors</h2>
+<p>This paragraph uses element selector.</p>
+<p class="highlight">This paragraph uses class selector.</p>
+
+<h3>Group Selector Example</h3>
+<p>Grouped heading style applied.</p>
+
+<div>
+    <p>This paragraph uses descendant selector.</p>
+</div>
+
+<ul>
+    <li>Child selector item 1</li>
+    <li>Child selector item 2</li>
+</ul>
+
+<h2>Adjacent Sibling</h2>
+<p>This paragraph is styled using adjacent sibling selector.</p>
+
+<h3>General Sibling</h3>
+<p>This paragraph uses general sibling selector.</p>
+<p>This is another sibling paragraph.</p>
+
+<a href="#">Hover over this link</a>
+<br><br>
+
+<input type="text" placeholder="Attribute selector applied">
+
+</body>
+</html>
