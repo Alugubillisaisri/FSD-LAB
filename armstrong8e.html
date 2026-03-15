@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Armstrong Number Program</title>
+</head>
+<body>
+
+<h2>Check Armstrong Number</h2>
+
+<script>
+
+let num = prompt("Enter a number:");
+let original = num;
+let sum = 0;
+
+while (num > 0) {
+    let digit = num % 10;
+    sum = sum + digit * digit * digit;
+    num = Math.floor(num / 10);
+}
+
+if (sum == original) {
+    document.write(original + " is an Armstrong Number");
+} else {
+    document.write(original + " is NOT an Armstrong Number");
+}
+
+</script>
+
+</body>
+</html>
